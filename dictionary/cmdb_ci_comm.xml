@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci" label="Communication Device" max_length="40" name="cmdb_ci_comm" sizeclass="41" type="collection">
+        <element label="Store ID" max_length="40" name="x_328385_restapi_store_id" type="integer"/>
+        <element default="javascript:new GlideDateTime().getDisplayValue()" label="Device Last Heard" max_length="40" name="x_328385_restapi_last_header" type="glide_date_time"/>
+        <element default="7001" label="Device Port" max_length="40" name="x_328385_restapi_device_port" type="integer"/>
+        <element label="Device ID" max_length="40" name="x_328385_restapi_device_id" type="string"/>
+        <element label="Device Monitor Count" max_length="40" name="x_328385_restapi_device_monitor_count" type="integer"/>
+        <element label="Endpoint" max_length="80" name="x_328385_restapi_endpoint" type="string"/>
+    </element>
+</database>

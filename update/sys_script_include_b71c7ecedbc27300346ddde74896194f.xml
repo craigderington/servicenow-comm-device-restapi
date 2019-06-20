@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_328385_restapi.BBI</api_name>
+        <client_callable>false</client_callable>
+        <description>A collection of REST API Methods in a Single Class</description>
+        <name>BBI</name>
+        <script><![CDATA[var BBI = Class.create();
+BBI.prototype = {
+    initialize: function() {
+    },
+	
+	getLocations: function(request, response) {
+		try {
+			var gr = new GlideRecordSecure("cmn_location");
+			gr.addQuery("x_328385_restapi_active", "True");
+			gr.addNotNullQuery("x_328385_restapi_store_id");
+			gr.query();
+
+			// set array object
+			var bodyArray = [];
+
+			// loop the query
+			while (gr.next()) {
+				bodyArray.push({
+					"Name": gr.name + "",
+					"StoreType": gr.x_328385_restapi_store_type + "",
+					"StoreID": gr.x_328385_restapi_store_id + "",
+					"Code": gr.x_328385_restapi_store_code + "",
+					"Status": gr.x_328385_restapi_active + ""
+				});				
+			}
+			
+			// log result
+			gs.info("BBI_REST_MESSAGE :: Success :: " + JSON.stringify(bodyArray));
+			return bodyArray;
+		}
+		catch (ex) {
+			gs.info("BBI_REST_ERROR_MESSAGE :: " + ex.message);
+		}
+	},
+	
+	getLocation: function(request, response) {
+		try {
+			var storeId = request.pathParams.storeId;
+			var gr = new GlideRecordSecure("cmn_location");
+			gr.addQuery("x_328385_restapi_store_id", storeId);
+			gr.query();
+
+			// loop the query
+			if (gr.next()) {
+				// return a single instance of the object
+				return {
+					"Name": gr.name + "",
+					"StoreType": gr.x_328385_restapi_store_type + "",
+					"StoreID": gr.x_328385_restapi_store_id + "",
+					"Code": gr.x_328385_restapi_store_code + "",
+					"Status": gr.x_328385_restapi_active + ""
+				};				
+			}
+		}
+		catch (ex) {
+			gs.info("BBI_REST_ERROR_MESSAGE: " + ex.message);
+		}
+	},
+	
+	getLocationDevices: function(request, response) {
+		try {
+			var storeId = request.pathParams.storeId;
+			var gr = new GlideRecordSecure("cmdb_ci_comm");
+			gr.addQuery("x_328385_restapi_store_id", storeId);
+			gr.orderBy("x_328385_restapi_device_id");
+			gr.query();
+			
+			// set array obj
+			deviceArray = [];
+			
+			// loop the query
+			while (gr.next()) {
+				deviceArray.push({
+					"Name": gr.name + "",
+					"Type": gr.type + "",
+					"DeviceID": gr.x_328385_restapi_device_id + "",
+					"Monitor": gr.monitor + "",
+					"IPAddress": gr.ip_address + "",
+					"Port": gr.x_328385_restapi_device_port + "",
+					"Endpoint": gr.x_328385_restapi_endpoint + "",
+					"AssetTag": gr.asset_tag + ""
+				});
+			}
+				
+			// log result
+			gs.info("BBI_REST_MESSAGE :: Success :: " + JSON.stringify(deviceArray));
+			return deviceArray;
+		}
+		catch (ex) {
+			var message = ex.message;
+			gs.info("BBI_REST_ERROR_MESSAGE: " + message);
+		}
+	},
+	
+	getDevice: function(request, response) {
+		try {
+			var deviceId = request.pathParams.deviceId;
+			var gr = new GlideRecordSecure("cmdb_ci_comm");
+			gr.addQuery("x_328385_restapi_device_id", deviceId);
+			gr.query();
+		
+			if (gr.next()) {
+				// return a single instance of device
+				gs.info("BBI_REST_MESSAGE :: Success :: Device ID: " + deviceId);
+				return {
+					"DeviceName": gr.name + "",
+					"DeviceType": gr.type + "",
+					"DeviceID": gr.x_328385_restapi_device_id + "",
+					"IPAddress": gr.ip_address + "",
+					"Port": gr.x_328385_restapi_device_port + "",
+					"Endpoint": gr.x_328385_restapi_endpoint + "",
+					"Location": gr.location.name + "",
+					"StoreID": gr.x_328385_restapi_store_id + "",
+				};
+			}
+		}
+		catch (ex) {
+			var message = ex.message;
+			gs.info("BBI_REST_ERROR_MESSAGE :: " + message);
+		}
+	},
+	
+    type: 'BBI'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-16 19:43:40</sys_created_on>
+        <sys_id>b71c7ecedbc27300346ddde74896194f</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>BBI</sys_name>
+        <sys_package display_value="RESTAPI" source="x_328385_restapi">b7703a82dbc27300346ddde748961965</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="RESTAPI">b7703a82dbc27300346ddde748961965</sys_scope>
+        <sys_update_name>sys_script_include_b71c7ecedbc27300346ddde74896194f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-17 14:37:15</sys_updated_on>
+    </sys_script_include>
+</record_update>
