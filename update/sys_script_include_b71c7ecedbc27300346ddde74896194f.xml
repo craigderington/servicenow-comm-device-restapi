@@ -141,7 +141,12 @@ BBI.prototype = {
 			gs.info("REST API :: Data in the request body :: Status Timestamp :: " + timestamp);
 			
 			// check to make sure we have a request data obj
-			if (reqData) {
+			if (!reqData || typeof reqData == undefined) {
+				// request body is null
+				gs.info("REST API :: Request Body is Empty");
+				
+			} else {
+				// init the glide record
 				var gr = new GlideRecord("x_328385_restapi_device_health_checks");
 				gr.initialize();
 				gr.timestamp = timestamp;
@@ -149,10 +154,8 @@ BBI.prototype = {
 				gr.health_check = healthStatus;
 				gr.insert();
 				
-				// log
+				// send to log
 				gr.info("REST API Device Health Check Status for: " + deviceId + " Status: " + healthStatus);
-			} else {
-				gs.info("REST API :: Request Body is Empty");
 			}			
 			
 		} catch (ex) {
@@ -175,13 +178,13 @@ BBI.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-16 19:43:40</sys_created_on>
         <sys_id>b71c7ecedbc27300346ddde74896194f</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>BBI</sys_name>
         <sys_package display_value="RESTAPI" source="x_328385_restapi">b7703a82dbc27300346ddde748961965</sys_package>
         <sys_policy>protected</sys_policy>
         <sys_scope display_value="RESTAPI">b7703a82dbc27300346ddde748961965</sys_scope>
         <sys_update_name>sys_script_include_b71c7ecedbc27300346ddde74896194f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-21 03:05:04</sys_updated_on>
+        <sys_updated_on>2019-06-21 13:17:37</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Device Health Checks" max_length="40" name="x_328385_restapi_device_health_checks" type="collection">
         <element label="Device ID" max_length="40" name="device_id" type="string"/>
-        <element choice="1" default="OK" label="Health Status" max_length="40" name="health_status" type="choice">
+        <element choice="1" default="OK" label="Health Status" max_length="40" name="health_status" type="string">
             <choice>
                 <element inactive_on_update="false" label="NOT OK" value="NOT OK"/>
                 <element inactive_on_update="false" label="OK" value="OK"/>
