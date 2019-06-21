@@ -128,19 +128,63 @@ BBI.prototype = {
 		}
 	},
 	
+	postDeviceStatus: function(request, response) {
+		// dump the postParams variable		
+		try {
+			
+			var reqBody = request.body;
+			var reqData = reqBody.data;
+			gs.info("REST API :: Data in the request body :: " + reqData.timestamp);
+			
+			// check to make sure we have a request data obj
+			if (reqData) {
+				var deviceId = request.pathParams.deviceId;
+				var timestamp = new GlideDateTime();
+				var healthStatus = reqData.healthStatus;
+				var gr = new GlideRecord("x_328385_restapi_device_health_checks");
+				gr.initialize();
+				gr.timestamp = timestamp;
+				gr.device_id = deviceId;
+				gr.health_check = healthStatus;
+				gr.insert();
+				
+				// log the inserted data
+				gr.info("REST API Device Health Check Status for: " + deviceId + " Status: " + healthStatus);
+				
+				var body = {};
+				body.device_id = deviceId;
+				body.timestamp = timestamp;
+				
+				// return result
+				response.setContentType("application/json");
+				response.setBody(body);
+				response.setStatus(200);
+				return response;
+				
+			} else {
+				gs.info("REST API request data is not in the correct format");
+				return false;
+			}
+			
+		} catch (ex) {
+			var msg = ex.message;
+			gs.info("REST API :: Create Device Status failed with: " + msg);
+		}
+	},
+	
     type: 'BBI'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-16 19:43:40</sys_created_on>
         <sys_id>b71c7ecedbc27300346ddde74896194f</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>BBI</sys_name>
         <sys_package display_value="RESTAPI" source="x_328385_restapi">b7703a82dbc27300346ddde748961965</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="RESTAPI">b7703a82dbc27300346ddde748961965</sys_scope>
         <sys_update_name>sys_script_include_b71c7ecedbc27300346ddde74896194f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-17 14:37:15</sys_updated_on>
+        <sys_updated_on>2019-06-21 01:46:46</sys_updated_on>
     </sys_script_include>
 </record_update>

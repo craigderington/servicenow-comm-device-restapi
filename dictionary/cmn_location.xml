@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="all_tables.text_index_translations=true" label="Location" max_length="40" name="cmn_location" text_index="true" type="collection">
-        <element label="Store Type" max_length="40" name="x_328385_restapi_store_type" type="string"/>
         <element default="True" label="Active" max_length="40" name="x_328385_restapi_active" type="boolean"/>
-        <element label="Store ID" max_length="40" name="x_328385_restapi_store_id" type="string"/>
         <element label="Store Code" max_length="40" name="x_328385_restapi_store_code" type="string"/>
+        <element label="Store ID" max_length="40" name="x_328385_restapi_store_id" type="string"/>
+        <element label="Store Type" max_length="40" name="x_328385_restapi_store_type" type="string"/>
     </element>
 </database>
