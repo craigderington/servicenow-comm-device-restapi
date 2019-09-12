@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="5a5bbbecdb1eff0069c85890cf9619fa" sys_domain="global" table="cmdb_ci_comm" version="3" view="Latkas_Device_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>165bfbecdb1eff0069c85890cf961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>965bfbecdb1eff0069c85890cf961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_328385_restapi_store_id</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>1a5bfbecdb1eff0069c85890cf961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_tag</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>9a5bfbecdb1eff0069c85890cf961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_328385_restapi_device_id</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>1e5bfbecdb1eff0069c85890cf961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>9e5bfbecdb1eff0069c85890cf961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>125bfbecdb1eff0069c85890cf961985</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>5a5bfbecdb1eff0069c85890cf961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>da5bfbecdb1eff0069c85890cf961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_number</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>5e5bfbecdb1eff0069c85890cf961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_id</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>de5bfbecdb1eff0069c85890cf961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>skip_sync</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>525bfbecdb1eff0069c85890cf961992</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:42</sys_created_on>
+            <sys_id>d25bfbecdb1eff0069c85890cf961992</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="025bbbecdb1eff0069c85890cf9619f7">5a5bbbecdb1eff0069c85890cf9619fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>cmdb_ci_comm</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 18:43:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a5bbbecdb1eff0069c85890cf9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_comm</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RESTAPI" source="x_328385_restapi">b7703a82dbc27300346ddde748961965</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="RESTAPI">b7703a82dbc27300346ddde748961965</sys_scope>
+            <sys_update_name>sys_ui_section_5a5bbbecdb1eff0069c85890cf9619fa</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 18:43:41</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Latkas Device View" name="Latkas_Device_View">025bbbecdb1eff0069c85890cf9619f7</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

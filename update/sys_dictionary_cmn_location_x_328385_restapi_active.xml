@@ -53,15 +53,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-16 18:56:46</sys_created_on>
-        <sys_id>2a61f2c6dbc27300346ddde748961957</sys_id>
+        <sys_id>c59cd760dbdaff0069c85890cf96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Active</sys_name>
         <sys_package display_value="RESTAPI" source="x_328385_restapi">b7703a82dbc27300346ddde748961965</sys_package>
         <sys_policy/>
         <sys_scope display_value="RESTAPI">b7703a82dbc27300346ddde748961965</sys_scope>
         <sys_update_name>sys_dictionary_cmn_location_x_328385_restapi_active</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-16 18:56:46</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-06-24 16:29:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
